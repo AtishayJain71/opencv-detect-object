@@ -1,6 +1,6 @@
 # Object Detection and Tracking using OpenCV
 
-This project implements a classical computer vision system to detect and track a known reference object (for example, a Frooti tetra pack) in a video file or a live camera feed using OpenCV.  
+This project implements a classical computer vision system to detect and track a known reference object (for example, a Frooti) in a video file or a live camera feed using OpenCV.  
 The system first detects the object using feature-based matching and then tracks it in real time using a bounding box.
 
 The solution does not use any deep learning or model training and relies entirely on traditional OpenCV techniques.
@@ -42,6 +42,7 @@ pip install -r requirements.txt
 ├── src/
 │   └── detect_and_track.py   # Main source code
 ├── requirements.txt
+├── output.mp4                # Output Video
 └── README.md
 ```
 
@@ -147,10 +148,8 @@ These limitations are inherent to non-learning, feature-based computer vision ap
 
 ## Demo
 
-A short demo video/GIF is included in the repository showing the output of the program, including:
+A short demo video is included in the repository showing the output of the program, including:
 
 - Initial object detection
 - Continuous tracking with a bounding box
 - Recovery after temporary tracking failure
-
-The demo demonstrates the system running on a sample video or live camera feed, as required by the assignment.
